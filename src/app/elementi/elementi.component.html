@@ -1,0 +1,9 @@
+<p>
+  elementi works!
+</p>
+<div style="cursor: pointer;" (click)="place_component(img.alt)" *ngFor="let img of images">
+  <div class="container">
+    <img [src]="img.src" [alt]="img.alt">
+    <div class="centered">{{img.alt}}</div>
+  </div>
+</div>
